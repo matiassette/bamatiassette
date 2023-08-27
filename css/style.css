@@ -1,0 +1,349 @@
+/*en este apartado se usan los estilos para darle una mejor imagen al html*/
+
+a{
+    /*con esta clase saco el lineado en las a y y el color actua en la letra*/
+    text-decoration: none;
+    color: black;
+}
+/*esta clase sirve para poder poner el color de la pagina.
+con la etiqueta background toma todo la pantalla con color*/
+.color__total{
+    background-color: #F2C562;
+}
+/*parte del navegador donde se alinea y genera partes para que tenga una
+visual mas orientada al navegador*/
+.carrito__nav{
+    text-align: right;
+    padding: 10px;
+    border-radius: 20px;
+}
+/*parte del perfil del navegador*/
+.perfil__nav{
+    text-align: right;
+    padding: 10px;
+    border-radius: 20px;
+}
+/*parte principal del html donde se colocan colores y margenes para 
+generar un centrado*/
+.header__nav{
+    color: #F2C562;
+    background-color: #7E5D2E;
+    text-align: center;
+    margin: 1px;
+    padding: 1px;
+    border: black 2px solid #7E5D2E;
+    border-radius: 20px;
+}
+/*buscador de navegador con orientacion a la pagina*/
+.buscador__nav{
+    /* color: #000000;
+    background-color: #BBBBBB;
+    text-align: center;
+    margin: 50px;
+    padding: 5px;
+    border: black 2px solid #7E5D2E;
+    border-radius: 20px 20px 20px 20px; */
+
+    font-family: sans-serif; 
+    font-size: 18px; 
+    margin: 10px;
+    padding: 10px;
+    color: #000000; 
+    background: #BBBBBB;
+    border-radius: 20px; 
+
+}
+/**caja del navegador para tomar forma */
+.caja__navegador{
+    margin: 5px;
+    padding: 5px;
+    border: black 2px solid green;
+    border-radius: 20px;
+    text-align: center;
+    background-color: #e2dcd4;
+    display: inline-flex;
+    list-style: none;
+}
+/*parte donde le doy tamaño a la imagen*/
+.imagen__logo{
+    width: 25x;
+    height: 25px;
+    margin-top: 10px;
+}
+/*parte principal del titulo de la pagina*/
+.titulo__carrito{
+    color: black;
+    background-color: #7E5D2E;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    border: black 2px solid #7E5D2E;
+    border-radius: 20px;
+    display: block;
+    text-decoration: underline black;
+
+}
+/*en este apartado se toma la ul para que al usarlo se alineen al centro */
+.nav__ul{
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    /* display: inline-flex; */
+}
+/*en este apartado usamos la clase para apuntar en la imagen*/
+.nav__ul__img{
+    width: 100px;
+    height: 100px;
+}
+/*calse cajita q sirve para que entren las cajas a seleccionar en el
+carrito a futuro*/
+.cajita{
+    margin: 5px;
+    padding: 5px;
+    border: black 2px solid green;
+    border-radius: 20px;
+    text-align: center;
+    background-color: #7E5D2E;
+    display: grid;
+    list-style: none;
+    align-items: center;
+}
+/*parte de los botones para que tomen forma*/
+.button__cajita{
+    margin: 5px;
+    padding: 5px;
+    border: black 2px solid green;
+    border-radius: 20px;
+    text-align: center;
+    background-color: beige;
+    list-style: none;
+    color: #7E5D2E;
+
+}
+.caja__precio{
+    display: flex;
+}
+.precio__total{
+    color:black;
+    margin: 40px;
+}
+.precio__descuento{
+    margin: 40px;
+    color:  #7E5D2E;
+    text-decoration: line-through;
+}
+a:hover{
+    color: beige;
+    cursor: pointer;
+}
+.button__cajita:hover {
+  color: #ff17e0;
+  cursor: pointer;
+}
+/*caja de la iamgen de la caja principal*/
+.cajita__img{
+    width: 60%;
+    height: 50%;
+    border-radius: 10px;
+    text-align: center;
+}
+/*parte divisora de las cajitas*/
+.div__cajita{
+    background-color: #F2C562;
+    border-radius: 20px;
+    margin: 5px;
+}
+/*parte del footer donde se ponen color y color de fondo */
+.section__alta__footer{
+    background-color: #000000;
+    color: beige;
+}
+/**parte baja del footer donde estan los logos y formas de pago*/
+.section__baja__footer{
+    background-color: #000000;
+    color: beige;
+    text-align: center;
+
+}
+/*sin el punto toma toda la clase directamente del header*/
+header {
+  width: 100%;
+  z-index: 100;
+  border-radius: 20px;
+}
+/*parte del nav donde toca el ul*/
+nav ul {
+  list-style: none;
+  overflow: hidden; 
+}
+/*parte del nav donde toca el li*/
+nav ul li {
+  float: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+/*parte del nav donde toca el a*/
+nav ul li a {
+  display: block; 
+  padding: 20px;
+  color: #000000;
+  text-decoration: none;
+}
+
+/*en este apartado comienza las media query al no tener boostrap usamos esto
+que hace que al cambiar de table a desktop o laptop se haga responsiv, lo
+que se debe hacer es siemper usar la vista mobil. */
+@media (min-width: 320px){
+        .nav__ul{
+        background-color: #7E5D2E;
+    }
+    a{
+    /*con esta clase saco el lineado en las a y y el color actua en la letra*/
+    text-decoration: none;
+    color: #000000;
+}
+.header__nav{
+    color: #F2C562;
+    background-color: #7E5D2E;
+    text-align: center;
+    margin: 1px;
+    padding: 1px;
+    border: black 2px solid #7E5D2E;
+    border-radius: 20px 20px 20px 20px;
+}
+.section__alta__footer{
+    background-color: #000000;
+    color: beige;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 20px;
+}
+.section__baja__footer{
+    background-color: #000000;
+    color: beige;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 20px;
+
+}
+}/*min es para el minimo en responsiv*/
+@media (min-width: 800px){
+    .nav__ul{
+        background-color: blue;
+    }
+    a{
+    /*con esta clase saco el lineado en las a y y el color actua en la letra*/
+    text-decoration: none;
+        color: #000000;
+}
+.header__nav{
+    color: #F2C562;
+    background-color: #7E5D2E;
+    text-align: center;
+    margin: 1px;
+    padding: 1px;
+    border: black 2px solid #7E5D2E;
+    border-radius: 20px 20px 20px 20px;
+}
+.cajita{
+    margin: 5px;
+    padding: 5px;
+    border: black 2px solid green;
+    border-radius: 20px 20px 20px 20px;
+    text-align: center;
+    background-color: #7E5D2E;
+    display: inline-flex;
+    list-style: none;
+}
+.section__alta__footer{
+    background-color: #000000;
+    color: beige;
+}
+.section__baja__footer{
+    background-color: #000000;
+    color: beige;
+    text-align: center;
+
+}
+}/*max es el maximo que llega el responsiv en el rango que uno le agrege
+en este caso es min 800 y max 1280 osea un minimo y un maximo donde
+se va hacer el corte en el cambio*/
+@media (min-width: 800px) and (max-width: 1280px){
+    .nav__ul{
+        background-color: #7E5D2E;
+    }
+    a{
+    /*con esta clase saco el lineado en las a y y el color actua en la letra*/
+    text-decoration: none;
+    color: #000000;
+}
+.header__nav{
+    color: #F2C562;
+    background-color: #7E5D2E;
+    text-align: center;
+    margin: 1px;
+    padding: 1px;
+    border: black 2px solid #7E5D2E;
+    border-radius: 20px 20px 20px 20px;
+}
+.cajita{
+    margin: 5px;
+    padding: 5px;
+    border: black 2px solid green;
+    border-radius: 20px 20px 20px 20px;
+    text-align: center;
+    background-color: #7E5D2E;
+    display: inline-flex;
+    list-style: none;
+}
+.section__alta__footer{
+    background-color: #000000;
+    color: beige;
+}
+.section__baja__footer{
+    background-color: #000000;
+    color: beige;
+    text-align: center;
+
+}
+}
+@media (min-width: 1280px){
+    .nav__ul{
+        background-color: #7E5D2E;
+    }
+    a{
+    /*con esta clase saco el lineado en las a y y el color actua en la letra*/
+    text-decoration: none;
+    color: #000000;
+}
+.header__nav{
+    color: #F2C562;
+    background-color: #7E5D2E;
+    text-align: center;
+    margin: 1px;
+    padding: 1px;
+    border: black 2px solid #7E5D2E;
+    border-radius: 20px 20px 20px 20px;
+}
+.cajita{
+    margin: 5px;
+    padding: 5px;
+    border: black 2px solid green;
+    border-radius: 20px 20px 20px 20px;
+    text-align: center;
+    background-color: #7E5D2E;
+    display: inline-flex;
+    list-style: none;
+}
+.section__alta__footer{
+    background-color: #000000;
+    color: beige;
+}
+.section__baja__footer{
+    background-color: #000000;
+    color: beige;
+    text-align: center;
+
+}
+}

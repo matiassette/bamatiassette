@@ -1,0 +1,54 @@
+.button__cajita{
+
+    border: black 2px solid;
+    border-radius: 20px;
+    text-align: center;
+    background-color: beige;
+    list-style: none;
+    color: #7E5D2E;
+
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    background-color: #7E5D2E;
+    text-align: center;
+    margin: 20px;
+    align-items: center;
+
+}
+.formulario__h1{
+    text-align: center;
+    color: black;
+    text-decoration: underline black;
+    
+}
+.caja{
+    margin: 1px;
+    padding: 5px;
+    border: black 2px solid ;
+    border-radius: 20px;
+    text-align: center;
+    background-color: beige;
+    list-style: none;
+    color: #7E5D2E;
+}
+label {
+    float: left;
+    width: 300px;
+    padding-right: 24px;
+}
+.caja__formulario{
+    text-align: center;
+}
+.cajita{
+    margin: 5px;
+    padding: 5px;
+    border: black 2px solid;
+    border-radius: 20px;
+    text-align: center;
+    background-color: #7E5D2E;
+    list-style: none;
+    align-items: center;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/formulario.css">
+
+    <header>
+        <!-- parte del header donde de hace el navegador o barra navegadora -->
+            <nav class="header__nav">
+                <ul class="nav__ul">
+                    <li><a href="index.html"><img class="nav__ul__img" src="imagenes/1-logo-color.png" alt="logo"></a></li> 
+                    <li><input type="search" placeholder="Buscador" class="caja__navegador"><img src="imagenes/search 1.png" alt="lupa" class="imagen__logo"></li> 
+                    <li><a class="carrito__nav" href="carrito.html">Carrito</a></li> 
+                </ul>    
+            </nav>
+    </header>
+<body class="color__total">
+    <section class="cajita">
+        <!--en esta parte del archivo se hace el formulario donde adaptamos el js
+        cada renglon toma una parte del fragemnto del codigo de js-->
+            <form action="index.html" id="formulario" class="caja__formulario" >
+                <!--titulo del formulario-->
+                <h1 class="formulario__h1">Formulario</h1>
+                <!--comienzo del formulario donde se le piden los datos al cliente
+                donde al no ingresar algun dato el validador le pide al usuario que 
+            vea nuevamente y que si no ingresa los datos pedidos no puede ingresar o seguir-->
+                <div class="contenedor">
+                    <label for="nombre" class="nombreCompleto">Nombre completo:</label>
+                    <input type="text" id="nombre" placeholder="nombre completo" class="caja">
+                    <label for="apellido" class="apellido">Apellido:</label>
+                    <input type="text" id="apellido" placeholder="apellido" class="caja">
+                    <label for="direccion" class="direccion">Direccion:</label>
+                    <input type="text" id="direccion" placeholder="direccion" class="caja">
+                    <label for="ciudad" class="ciudad">Ciudad:</label>
+                    <input type="text" id="ciudad" placeholder="ciudad" class="caja">
+                    <label for="dni" class="dni">Dni:</label>
+                    <input type="number" id="dni" placeholder="dni" class="caja">
+                    <label for="mail" class="mail">Mail:</label>
+                    <input type="text" id="mail" placeholder="mail" class="caja">
+                    <label for="telefono" class="telefono">Telefono:</label>
+                    <input type="number" id="telefono" placeholder="telefono" class="caja">
+                    <input type="submit" value="entrar" class="button__cajita">
+                </div>
+            </form>
+    </section>
+    <footer>
+        <!--parte del footer o inferior de la pagina web-->
+        <section class="section__alta__footer">
+            <p>Nos encontramos en av siempre viva 2487.</p>
+            <p>Ubicacion:</p>
+            <p>Llamar al 0800-simpson.</p>
+            <p>Atencion al cliente comunicarse con la coordinadora ro.</p>
+        </section>
+        <section class="section__baja__footer" >
+            <img src="imagenes/Group.png" alt="logo c"><p>2023 - BA. Todos los derechos reservados.</p>
+            <img src="imagenes/visa.png" alt="visa">
+            <img src="imagenes/american_express.png" alt="american express">
+            <img src="imagenes/master_card.png" alt="master card">
+            <img src="imagenes/paypal.png" alt="paypal">
+        </section>
+    </footer>
+</body>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/formulario.js"></script>
+</html>
